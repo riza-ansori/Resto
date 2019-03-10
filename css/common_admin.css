@@ -1,0 +1,52 @@
+/*
+Common.css for wp-admin
+It is use for all page on current project
+*/
+
+@charset "utf-8";
+
+/* ===================== common ==== */
+
+.form-table th {
+    padding: 20px 0px 20px 0px;
+}
+.formError.inline,
+.product_capacityformError,
+.product_totalAcidityformError{
+	width: calc(100% - 25px) !important;
+}
+.label-unit{
+	position: absolute;
+	top: 22px;
+	right: 0;
+}
+
+#product_category {
+	width: 54%;
+}
+
+.formError.inline.product_anchorLinkformError{
+	width: calc(100% - 25px) !important;
+}
+
+.label-required{
+	position: relative;
+}
+
+.label-required:before{
+	content: "必須";
+	position: absolute;
+	left: -50px;
+	top: 18px;
+	padding: 3px 10px;
+	background: red;
+	color: #fff;
+}
+
+@media (max-width: 767px){
+	.label-required:before {
+		position: absolute;
+		left: 130px;
+		top: -41px;
+	}
+}

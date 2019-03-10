@@ -1,0 +1,15 @@
+#content-news p, #content-news img {
+    padding: 8px 0;
+}
+#content-news p:first-child, #content-news img:first-child {
+    padding-top: 0;
+}
+#content-news p:last-child, #content-news img:last-child {
+    padding-bottom: 0;
+}
+#content-news img {
+	width: 100%;
+	max-width: 100%;
+	display: block;
+	margin: auto;
+}

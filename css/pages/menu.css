@@ -1,0 +1,121 @@
+.heading-categories {
+    text-align: center;
+    margin-bottom: 48px;
+}
+.heading-categories li {
+    display: inline-block;
+    position: relative;
+}
+.heading-categories li:after {
+    content: '';
+    position: absolute;
+    right: -3px;
+    bottom: 0;
+    background: #000;
+    width: 2px;
+    height: 100%;
+}
+.heading-categories li:last-child:after {
+    display: none;
+}
+.heading-categories li a {
+	font-weight: 300;
+    font-size: 32px;
+    line-height: 1.2;
+    padding: 0 15px;
+    font-family: 'PT Serif', serif;
+    transition: .5s ease;
+}
+.heading-categories .ui-state-active a {
+	color: #ee0000;
+}
+.wrapper-list {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+}
+.wrapper-list:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.wrapper-list a{
+	position: relative;
+}
+.wrapper-list a:hover{
+	color: #212529;
+}
+.wrapper-list a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #808080;
+    left: 0;
+    right: 0;
+    bottom: -32px;
+}
+.wrapper-list:last-child a:after{
+	display: none;
+}
+#menu-list .gallery-image {
+    width: 155px;
+    height: 155px;
+    margin-right: 15px;
+    border-radius: 100%;
+}
+#menu-list .menu-content {
+    width: calc(100% - 155px);
+}
+.wrapper-list a .wrapper-image:after{
+	content: 'View';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	opacity: 0;
+	transition: .5s ease;
+	font-size: 16px;
+}
+.wrapper-list a:hover .wrapper-image:after{
+	opacity: 1;
+}
+.price {
+    font-size: 20px;
+    margin-top: 8px;
+    color: #ee0000;
+    font-weight: 600;
+}
+.title-menu {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .heading-categories li a {
+        font-size: 24px;
+    }
+    .menus {
+        margin-bottom: 32px;
+    }
+    .wrapper-list {
+        margin-bottom: 0;
+    }
+    .menus:last-child {
+        margin-bottom: 0;
+    }
+    .wrapper-list a {
+        position: relative;
+        margin-bottom: 32px;
+    }
+    .wrapper-list:last-child .menus a:after {
+        display: block;
+    }
+    .wrapper-list:last-child .menus:last-child a:after {
+        display: none;
+    }
+}
